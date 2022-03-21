@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./EmployeeInput.css"
 
 const EmployeeInput = ({handleChange1, handleChange2, handleChange3, handleChange4, handleChange5, postData, AllDept, Marketing, HR, IT, Finance, Ascending, Descending}) => {
   return (
     <>
-        <div>
+        <div className="addEmp">
           <input onChange = {handleChange1} type="text" placeholder = 'Name'/>
           <input onChange = {handleChange2} type="text" placeholder = 'Gender'/>
           <input onChange = {handleChange3} type="text" placeholder = 'Department'/>
