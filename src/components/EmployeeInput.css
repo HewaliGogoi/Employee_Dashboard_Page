@@ -3,3 +3,27 @@
     flex-direction: column;
     width: 30%;
 }
+
+.filters{
+    border-top: 5px solid #cecece;
+    justify-content: left;
+}
+
+.filters > div:first-child{
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+
+.filters > div:nth-child(2){
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+
+.empData{
+    border: 2px solid #cecece;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 2%;
+    padding: 0% 2%;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./EmployeeInput.css"
+import "./EmployeeInput.css";
 
 const EmployeeInput = ({handleChange1, handleChange2, handleChange3, handleChange4, handleChange5, postData, AllDept, Marketing, HR, IT, Finance, Ascending, Descending}) => {
   return (
@@ -13,16 +13,19 @@ const EmployeeInput = ({handleChange1, handleChange2, handleChange3, handleChang
           <button onClick = {postData}>ADD EMPLOYEE</button><br />
         </div>
         
-        <h3>Filters</h3>
-        <button onClick = {AllDept}>Show All Departments</button>
-        <button onClick = {Marketing}>Show Marketing</button>
-        <button onClick = {HR}>Show HR</button>
-        <button onClick = {IT}>Show IT</button>
-        <button onClick = {Finance}>Show Finance</button><br />
-        
-        <h3>Sorting</h3>
-        <button onClick = {Ascending}>Sort By Salary Ascending</button>
-        <button onClick = {Descending}>Sort By Salary Descending</button><br />
+        <div className="filters">
+          <div>  
+            <button onClick = {AllDept}>Show All Departments</button>
+            <button onClick = {Marketing}>Show Marketing</button>
+            <button onClick = {HR}>Show HR</button>
+            <button onClick = {IT}>Show IT</button>
+            <button onClick = {Finance}>Show Finance</button>
+          </div>
+          <div>
+            <button onClick = {Ascending}>Sort By Salary Ascending</button>
+            <button onClick = {Descending}>Sort By Salary Descending</button>
+          </div>
+        </div>
     </>
   )
 }

@@ -10,6 +10,7 @@ const Employee = () => {
     const [role, setRole] = useState('');
     const [sal, setSal] = useState('');
     const [data, setData] = useState([]);
+    const [filter, setFilter] = useState([]);
 
     const handleChange1 = (e) => {
         // console.log(e.target.value);
@@ -63,6 +64,7 @@ const Employee = () => {
         data = await data.json();
         console.log(data)
         setData(data);
+        setFilter(data);
     }
 
     useEffect(() => {
@@ -78,44 +80,44 @@ const Employee = () => {
     const Marketing = () => {
         let item = data.filter((emp) => emp.dept == "Marketing");
         console.log(item);
-        setData(item);
+        setFilter(item);
     }
 
     const HR = () => {
         let item = data.filter((emp) => emp.dept == "HR");
         console.log(item)
-        setData(item);
+        setFilter(item);
     }
 
     const IT = () => {
         let item = data.filter((emp) => emp.dept == "IT");
         console.log(item)
-        setData(item);
+        setFilter(item);
     }
 
     const Finance = () => {
         let item = data.filter((emp) => emp.dept == "Finance");
         console.log(item)
-        setData(item);
+        setFilter(item);
     }
 
     const Ascending = () => {
         let item = data.sort((a,b) => a.salary - b.salary)
         console.log(item);
-        setData([...item]);
+        setFilter([...item]);
     }
 
     const Descending = () => {
         let item = data.sort((a,b) => b.salary - a.salary)
         console.log(item);
-        setData([...item]);
+        setFilter([...item]);
     }
 
   return (
     <>
         <EmployeeInput handleChange1={handleChange1} handleChange2={handleChange2} handleChange3={handleChange3} handleChange4={handleChange4} handleChange5={handleChange5} postData={postData} AllDept={AllDept} Marketing = {Marketing} HR={HR} IT={IT} Finance = {Finance} Ascending={Ascending} Descending={Descending}/>
 
-        <EmployeeList data={data}/>
+        <EmployeeList data={filter}/>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./EmployeeInput.css";
 
 const EmployeeList = ({data}) => {
   return (
@@ -6,7 +7,7 @@ const EmployeeList = ({data}) => {
         <h3>Employee Data</h3>
         {
             data.map((e) => 
-                <div key = {e.id}>
+                <div key = {e.id} className = "empData">
                     <h5>Name : {e.name}</h5>
                     <h5>Gender : {e.gender}</h5>
                     <h5>Department : {e.dept}</h5>
