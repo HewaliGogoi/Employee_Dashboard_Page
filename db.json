@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {
+      "name": "",
+      "gender": "",
+      "dept": "Marketing",
+      "role": "",
+      "salary": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "HR",
+      "role": "",
+      "salary": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "IT",
+      "role": "",
+      "salary": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "Finance",
+      "role": "",
+      "salary": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "",
+      "role": "",
+      "salary": "1",
+      "id": 5
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "",
+      "role": "",
+      "salary": "2",
+      "id": 6
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "",
+      "role": "",
+      "salary": "3",
+      "id": 7
+    },
+    {
+      "name": "",
+      "gender": "",
+      "dept": "",
+      "role": "",
+      "salary": "1",
+      "id": 8
+    }
+  ]
+}
