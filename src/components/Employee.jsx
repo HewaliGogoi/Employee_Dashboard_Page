@@ -77,7 +77,7 @@ const Employee = () => {
 
     const Marketing = () => {
         let item = data.filter((emp) => emp.dept == "Marketing");
-        console.log(item)
+        console.log(item);
         setData(item);
     }
 
@@ -102,13 +102,13 @@ const Employee = () => {
     const Ascending = () => {
         let item = data.sort((a,b) => a.salary - b.salary)
         console.log(item);
-        setData(item);
+        setData([...item]);
     }
 
     const Descending = () => {
         let item = data.sort((a,b) => b.salary - a.salary)
         console.log(item);
-        setData(item);
+        setData([...item]);
     }
 
   return (
